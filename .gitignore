@@ -1,0 +1,42 @@
+# Ignorer les fichiers de sauvegarde automatiques créés par certains éditeurs (comme nano, vim)
+*~
+*.swp
+*.swo
+
+# Ignorer les fichiers temporaires générés lors de l'exécution des scripts
+*.log
+*.tmp
+
+# Ignorer les fichiers de sortie ou binaires générés
+*.out
+*.exe
+*.o
+
+# Ignorer les fichiers générés par des tests ou des scripts Bash
+*.test
+*.bak
+
+# Ignorer les fichiers spécifiques à l'environnement
+.env
+*.env
+
+# Ignorer les répertoires de build ou de travail
+build/
+dist/
+node_modules/
+
+# Ignorer les fichiers de configuration spécifiques aux éditeurs
+.vscode/
+.idea/
+
+# Ignorer les fichiers d'exécution bash personnalisés
+bash_history
+
+# Ignorer les fichiers système (MacOS, etc.)
+.DS_Store
+*.AppleDouble
+.LSOverride
+
+# Ignorer les fichiers de sauvegarde ou temporaires de JetBrains IDE
+.idea/
+
