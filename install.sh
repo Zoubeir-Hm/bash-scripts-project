@@ -1,7 +1,28 @@
 #!/bin/bash 
 
+
+
 # Get the current working directory where the project is located
 PROJECT_DIR="$(pwd)"
+
+# Function to check if a command is installed
+command_check() {
+    if [ -z "$1" ]; then
+        echo "Usage: command_check <command_name>"
+        exit 1
+    fi
+    if ! command -v "$1" &> /dev/null; then
+        echo "Error: '$1' is not installed. Please install it to proceed."
+        exit 1
+    fi
+}
+# Generate Logo in Bash Script
+# Check the availability of commands needed to generate the logo.
+
+command_check "figlet"
+command_check "lolcat"
+command_check "boxes"
+figlet "zhm...!" | lolcat -f | boxes -d unicornthink
 
 # Function to add aliases to the shell configuration file
 add_aliases() {

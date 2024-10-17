@@ -19,7 +19,8 @@ alias startserver='. ~/bash-scripts-project/scripts/dev-tools/start_server.sh'
 #-------------------------system-management
 # Clean the system by removing temporary files and cache
 alias cleanup='. ~/bash-scripts-project/scripts/system-management/cleanup.sh'
-
+# Function to check if a command is installed
+alias command_check='. ~/bash-scripts-project/scripts/system-management/command_check.sh'
 
 #-------------------------network-tools
 # Test network connectivity with a given site
