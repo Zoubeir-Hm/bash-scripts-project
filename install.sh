@@ -1,5 +1,30 @@
 #!/bin/bash 
 
+cat << 'EOF'
+          _____                    _____                    _____          
+         /\    \                  /\    \                  /\    \         
+        /::\    \                /::\____\                /::\____\        
+        \:::\    \              /:::/    /               /::::|   |        
+         \:::\    \            /:::/    /               /:::::|   |        
+          \:::\    \          /:::/    /               /::::::|   |        
+           \:::\    \        /:::/____/               /:::/|::|   |        
+            \:::\    \      /::::\    \              /:::/ |::|   |        
+             \:::\    \    /::::::\    \   _____    /:::/  |::|___|______  
+              \:::\    \  /:::/\:::\    \ /\    \  /:::/   |::::::::\    \ 
+_______________\:::\____\/:::/  \:::\    /::\____\/:::/    |:::::::::\____\
+\::::::::::::::::::/    /\::/    \:::\  /:::/    /\::/    / ~~~~~/:::/    /
+ \::::::::::::::::/____/  \/____/ \:::\/:::/    /  \/____/      /:::/    / 
+  \:::\~~~~\~~~~~~                 \::::::/    /               /:::/    /  
+   \:::\    \                       \::::/    /               /:::/    /   
+    \:::\    \                      /:::/    /               /:::/    /    
+     \:::\    \                    /:::/    /               /:::/    /     
+      \:::\    \                  /:::/    /               /:::/    /      
+       \:::\____\                /:::/    /               /:::/    /       
+        \::/    /                \::/    /                \::/    /        
+         \/____/                  \/____/                  \/____/         
+                                                                           
+
+EOF
 
 
 # Get the current working directory where the project is located
@@ -16,13 +41,7 @@ command_check() {
         exit 1
     fi
 }
-# Generate Logo in Bash Script
-# Check the availability of commands needed to generate the logo.
 
-command_check "figlet"
-command_check "lolcat"
-command_check "boxes"
-figlet "zhm...!" | lolcat -f | boxes -d unicornthink
 
 # Function to add aliases to the shell configuration file
 add_aliases() {
