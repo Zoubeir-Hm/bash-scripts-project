@@ -39,4 +39,5 @@ bash_history
 
 # Ignorer les fichiers de sauvegarde ou temporaires de JetBrains IDE
 .idea/
-
+# Ignorer les scripts personnels
+scripts/pers/

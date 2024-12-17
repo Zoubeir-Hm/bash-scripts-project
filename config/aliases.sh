@@ -1,6 +1,6 @@
 #!/bin/bash
 
-PROJECT_DIR=$(pwd)
+PROJECT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 
 #-------------------------file-management
 # Source the mkcd script directly to use it in the current shell session
@@ -25,5 +25,4 @@ alias command_check=". $PROJECT_DIR/scripts/system-management/command_check.sh"
 #-------------------------network-tools
 # Test network connectivity with a given site
 alias pingtest=". $PROJECT_DIR/scripts/network-tools/ping_test.sh"
-
-
+#echo "$PROJECT_DIR"

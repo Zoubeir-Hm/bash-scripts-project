@@ -52,7 +52,7 @@ add_aliases() {
         echo "Adding aliases from $ALIAS_FILE"
 
         # Determine the correct shell configuration file
-        if [[ -n $ZSH_VERSION ]]; then
+        if [[ -v $ZSH_VERSION ]]; then
             SHELL_RC="$HOME/.zshrc"
         else
             SHELL_RC="$HOME/.bashrc"
@@ -87,5 +87,6 @@ add_aliases
 # Source the updated .bashrc so that aliases and PATH changes take effect immediately
 source "$HOME/.bashrc"
 
-echo "Installation complete! Restart your terminal or run 'source ~/.bashrc' to apply changes."
-
+#echo -e "🎉 🚀 Installation complete! Restart your terminal or run \e[3;1;32m'source ~/.bashrc'\e[0m to apply changes."
+command -v pv >/dev/null 2>&1 || { echo -e "\e[3;1;32mpv is required but not installed. Install it with 'sudo apt-get install pv'.\e[0m"; exit 1; }
+echo -e "🎉  🚀 Installation complete! Restart your terminal or run \e[3;1;32m'source ~/.bashrc'\e[0m to apply changes. 🚀" | pv -qL 20
